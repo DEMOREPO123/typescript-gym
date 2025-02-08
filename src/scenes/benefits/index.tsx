@@ -39,9 +39,7 @@ const conatiner = {
 };
 
 type Props = {
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {

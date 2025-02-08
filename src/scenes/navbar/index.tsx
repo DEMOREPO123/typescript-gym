@@ -8,9 +8,7 @@ import ActionButton from "@/shared/ActionButton";
 
 type Props = {
   selectedPage: SelectedPage;
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: (value: SelectedPage) => void;
   isTopOfPage: boolean;
 };
 

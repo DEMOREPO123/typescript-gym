@@ -6,9 +6,7 @@ import ConatctUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/shared/HText";
 
 type Props = {
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 const URL: string = "https://formsubmit.co/51e89b5ae63b27a89745ba0351a31e86";
 const inputStyles = ` mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;

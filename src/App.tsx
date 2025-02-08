@@ -1,11 +1,11 @@
 import Navbar from "@/scenes/navbar";
-import Home from "@/scenes/Home";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import Benefits from "@/scenes/benefits";
 import OurClasses from "@/scenes/ourClasses";
 import ContactUs from "@/scenes/contactUs";
 import Footer from "./scenes/footer";
+import Home from "./scenes/home";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(

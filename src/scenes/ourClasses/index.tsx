@@ -47,9 +47,7 @@ const classes: Array<ClassType> = [
 ];
 
 type Props = {
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const OurClasses = ({ setSelectedPage }: Props) => {
