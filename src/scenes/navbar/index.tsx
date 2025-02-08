@@ -4,11 +4,12 @@ import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState } from "react";
+import React from "react";
 import ActionButton from "@/shared/ActionButton";
 
 type Props = {
   selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
   isTopOfPage: boolean;
 };
 

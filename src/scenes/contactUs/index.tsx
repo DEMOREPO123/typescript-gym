@@ -1,20 +1,17 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import ConatctUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/shared/HText";
+import React from "react";
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 const URL: string = "https://formsubmit.co/51e89b5ae63b27a89745ba0351a31e86";
 const inputStyles = ` mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  //   const [name, SetName] = useState<string>("");
-  //   const [email, setEmail] = useState<string>("");
-  //   const [message, setMessage] = useState<string>("");
   const {
     register,
     trigger,
@@ -26,9 +23,6 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     if (!isValid) {
       e.preventDefault();
     }
-    // setEmail("");
-    // SetName("");
-    // setMessage("");
   };
   return (
     <section id="contactus" className="mx-auto pt-24 pb-32 w-5/6">

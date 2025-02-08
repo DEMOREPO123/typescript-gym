@@ -4,9 +4,7 @@ import { SelectedPage } from "./types";
 
 type Props = {
   children: React.ReactNode;
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 
 const ActionButton = ({ children, setSelectedPage }: Props) => {

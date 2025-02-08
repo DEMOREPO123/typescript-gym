@@ -1,7 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import React from "react";
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -12,9 +12,7 @@ type Props = {
   icon: JSX.Element;
   title: string;
   description: string;
-  setSelectedPage(
-    value: SelectedPage,
-  ): React.Dispatch<React.SetStateAction<SelectedPage>>;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 
 const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {

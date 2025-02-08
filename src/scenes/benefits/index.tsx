@@ -1,4 +1,3 @@
-import React from "react";
 import {
   HomeModernIcon,
   UserGroupIcon,
@@ -10,6 +9,7 @@ import HText from "@/shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
 import BeneFitsPageGrapgic from "@/assets/BenefitsPageGraphic.png";
+import React from "react";
 
 const benefits: Array<BenefitType> = [
   {
@@ -39,7 +39,7 @@ const conatiner = {
 };
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {

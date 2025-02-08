@@ -1,5 +1,4 @@
 import { SelectedPage } from "@/shared/types";
-import React from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
@@ -9,9 +8,10 @@ import SponserForbes from "@/assets/SponsorForbes.png";
 import SponserFortune from "@/assets/SponsorFortune.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import React from "react";
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 
 const Home = ({ setSelectedPage }: Props) => {

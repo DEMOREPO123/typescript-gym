@@ -1,5 +1,5 @@
 import { SelectedPage } from "@/shared/types";
-import React from "react";
+
 import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
 import image3 from "@/assets/image3.png";
@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import { ClassType } from "@/shared/types";
 import Class from "./Class";
+import React from "react";
 
 const classes: Array<ClassType> = [
   {
@@ -47,7 +48,7 @@ const classes: Array<ClassType> = [
 ];
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: React.Dispatch<React.SetStateAction<SelectedPage>>;
 };
 
 const OurClasses = ({ setSelectedPage }: Props) => {
